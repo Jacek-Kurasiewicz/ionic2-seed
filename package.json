@@ -1,8 +1,8 @@
 {
-  "name": "angular2-seed",
+  "name": "ionic2-seed",
   "version": "0.0.0",
-  "description": "Seed for Angular 2 apps",
-  "repository": "https://github.com/mgechev/angular2-seed",
+  "description": "Seed for Ionic 2 & Angular 2 apps",
+  "repository": "https://github.com/jksoftpro/ionic2-seed",
   "scripts": {
     "build.dev": "gulp build.dev",
     "build.dev.watch": "gulp build.dev.watch",
@@ -21,7 +21,7 @@
     "test": "gulp test",
     "tsd": "tsd"
   },
-  "author": "Minko Gechev <mgechev>",
+  "author": "Minko Gechev <mgechev>, Ionic version by Jacek Kurasiewicz <jksoftpro>",
   "license": "MIT",
   "devDependencies": {
     "@reactivex/rxjs": "^5.0.0-alpha.6",
@@ -70,12 +70,13 @@
     "ts-node": "^0.2.4",
     "tsd": "^0.6.4",
     "typedoc": "^0.3.12",
-    "typescript": "~1.6.0",
+    "typescript": "^1.6.2",
     "typescript-register": "^1.1.0",
     "yargs": "^3.25.0",
     "zone.js": "^0.5.8"
   },
   "dependencies": {
+    "ionic-framework": "^2.0.0-alpha.36",
     "angular2": "2.0.0-alpha.46",
     "bootstrap": "^3.3.5",
     "es6-module-loader": "^0.17.8",
