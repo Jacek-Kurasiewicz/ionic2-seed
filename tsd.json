@@ -46,12 +46,6 @@
     },
     "ionic2/ionic2.d.ts": {
       "commit": "e2a1f330ab014c1326ae2354e62ea2edd2f518f6"
-    },
-    "es6-promise/es6-promise.d.ts": {
-      "commit": "c321c3c9021950fdb16d1838bf07d421e8910f26"
-    },
-    "angular2/angular2-2.0.0-alpha.39.d.ts": {
-      "commit": "c321c3c9021950fdb16d1838bf07d421e8910f26"
     }
   }
 }

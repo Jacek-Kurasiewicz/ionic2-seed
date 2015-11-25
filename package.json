@@ -77,7 +77,7 @@
   },
   "dependencies": {
     "ionic-framework": "^2.0.0-alpha.36",
-    "angular2": "2.0.0-alpha.46",
+    "angular2": "tlancina/angular-package",
     "bootstrap": "^3.3.5",
     "es6-module-loader": "^0.17.8",
     "es6-shim": "^0.33.6",

@@ -1,5 +1,5 @@
 {
-    "version": "1.6.0",
+    "version": "1.6.2",
     "compilerOptions": {
         "target": "es5",
         "module": "commonjs",
@@ -9,7 +9,8 @@
         "noLib": false,
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
-        "sourceMap": true
+        "sourceMap": true,
+        "noEmitOnError": false
     },
     "exclude": [
         "node_modules"
