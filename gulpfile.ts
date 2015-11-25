@@ -9,6 +9,10 @@ import {loadTasks, task} from './tools/utils';
 loadTasks();
 
 // --------------
+// Ionic2 Typings generation.
+gulp.task('ionic2.generate.dts')
+
+// --------------
 // Clean (override).
 gulp.task('clean',       task('clean', 'all'));
 gulp.task('clean.dist',  task('clean', 'dist'));

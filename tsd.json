@@ -1,6 +1,6 @@
 {
   "version": "v4",
-  "repo": "jksoftpro/DefinitelyTyped",
+  "repo": "DefinitelyTyped/DefinitelyTyped",
   "ref": "master",
   "path": "tools/typings/tsd",
   "bundle": "tools/typings/tsd/tsd.d.ts",
@@ -43,9 +43,6 @@
     },
     "async/async.d.ts": {
       "commit": "e9be3cecf8a326d3e220c52b42d218169a7bb9f2"
-    },
-    "ionic2/ionic2.d.ts": {
-      "commit": "e2a1f330ab014c1326ae2354e62ea2edd2f518f6"
     }
   }
 }
