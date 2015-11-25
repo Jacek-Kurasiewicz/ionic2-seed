@@ -1,5 +1,10 @@
 /**
+ * Copyright (C) 2015 Jacek Kurasiewicz <git:jksoftpro>
+ * This file is part of https://github.com/jksoftpro/ionic2-seed
+ * MIT License applies
+ * -------------------------------------------------------------
  * Typings for "ionic-framework": "^2.0.0-alpha.36"
+ * -------------------------------------------------------------
  */
 
 
