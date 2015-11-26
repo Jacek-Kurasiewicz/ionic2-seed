@@ -6,15 +6,17 @@ import {argv} from 'yargs';
 // Configuration.
 export const ENV                  = argv['env']         || 'dev';
 export const DEBUG                = argv['debug']       || false;
-export const PORT                 = argv['port']        || 5555;
-export const LIVE_RELOAD_PORT     = argv['reload-port'] || 4002;
-export const DOCS_PORT            = argv['docs-port']   || 4003;
+export const PORT                 = argv['port']        || 5556;
+export const LIVE_RELOAD_PORT     = argv['reload-port'] || 4004;
+export const DOCS_PORT            = argv['docs-port']   || 4005;
 export const APP_BASE             = argv['base']        || '/';
 
 export const APP_TITLE            = 'My Angular2 App';
 
 export const APP_SRC              = 'app';
 export const ASSETS_SRC           = `${APP_SRC}/assets/**/*`;
+export const IONIC2_SASS_SRC      = 'node_modules/ionic-framework/dist/src/scss/**/*.scss';
+export const IONIC2_SASS_SRC_EXCLUDES = ['!node_modules/ionic-framework/dist/src/scss/**/*.scss'];
 
 export const TOOLS_DIR            = 'tools';
 export const TEST_DEST            = 'test';
@@ -40,6 +42,7 @@ export const DEV_DEPENDENCIES = [
   { src: 'angular2/bundles/angular2.dev.js',  dest: LIB_DEST, inject: true },
   { src: 'angular2/bundles/router.dev.js',    dest: LIB_DEST, inject: true },
   { src: 'angular2/bundles/http.dev.js',      dest: LIB_DEST, inject: true },
+  { src: 'ionic-framework/dist/js/ionic.js',  dest: LIB_DEST, inject: true },
 
   { src: 'bootstrap/dist/css/bootstrap.css', dest: CSS_DEST, inject: true },
 
