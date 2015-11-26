@@ -1,0 +1,120 @@
+$colors: ( // TODO should be imported, but now are copied from www/app/app.scss
+  primary:    #387ef5,
+  secondary:  #32db64,
+  danger:     #f53d3d,
+  light:      #f4f4f4,
+  dark:       #222,
+);
+
+.md {
+  media-checkbox {
+    margin: 9px 9px 9px 10px;
+  }
+  media-radio {
+    margin: 9px 2px 9px 8px;
+  }
+  // 4 - rounded ripple background under checkbox and radiobutton
+  ion-checkbox, ion-radio {
+    media-checkbox, media-radio {
+      position: relative;
+      &:before { // (4)
+        content: '';
+        width: 36px;
+        height: 36px;
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        border-radius: 50%;
+        opacity: 0;  
+        transition: opacity .6s cubic-bezier(0, 0, 0.003, 0.96);   
+        background-color: map-get($colors, primary);
+      }
+    }
+    &.activated{
+      media-checkbox, media-radio{
+        &:before { // (4), shown when ion-checkbox/ion-radio has been clicked and has "activated" class
+          opacity: 0.3;
+        }
+      }    
+    }
+  }
+  // Generate background-color for rounded ripple under checkbox and radiobutton (1, 2).
+  // And generate color of animated circle in selected radiobutton after deselecting (3).
+  @each $name, $value in $colors {
+    ion-checkbox[#{$name}] media-checkbox:before, // (1)
+    ion-radio[#{$name}] media-radio:before, // (2)
+    ion-radio[#{$name}] radio-icon:after { // (3)
+      background-color: #{$value}
+    }
+  }
+  
+  ion-checkbox[text-orientation="bottom"] {
+    media-checkbox {
+      position: absolute;
+      top: 2px;
+      left: calc(50% - 13px);      
+    }
+    ion-item-content {
+      margin: 35px 0px 3px 0;
+      text-align: center;      
+    }
+  }  
+  
+  ion-checkbox[text-orientation="top"] {
+    media-checkbox {
+      position: absolute;
+      bottom: 2px;
+      left: calc(50% - 14px);      
+    }
+    ion-item-content {
+      margin: 3px 0px 35px 0;
+      text-align: center;      
+    }
+  }    
+  
+  ion-checkbox[text-orientation="left"] {
+    media-checkbox {   
+      position: absolute;
+      right: 1px;
+      top: calc(50% - 18px);
+    }
+    ion-item-content {
+      margin-right: 27px;         
+    }
+  }  
+  
+  ion-radio[text-orientation="bottom"] {
+    media-radio {
+      position: absolute;
+      top: 2px;
+      left: calc(50% - 13px);      
+    }
+    ion-item-content {
+      margin: 35px 0px 3px 0;
+      text-align: center;      
+    }
+  }  
+  
+  ion-radio[text-orientation="top"] {
+    media-radio {
+      position: absolute;
+      bottom: 2px;
+      left: calc(50% - 14px);      
+    }
+    ion-item-content {
+      margin: 3px 0px 35px 0;
+      text-align: center;      
+    }
+  }    
+  
+  ion-radio[text-orientation="right"] {
+    media-radio {   
+      position: absolute;
+      left: 18px;
+      top: calc(50% - 18px);
+    }
+    ion-item-content {
+      margin-left: 35px;         
+    }
+  }    
+}

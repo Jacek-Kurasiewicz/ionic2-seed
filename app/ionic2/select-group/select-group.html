@@ -1,0 +1,53 @@
+<ion-navbar *navbar>
+  <a menu-toggle>
+    <icon menu></icon>
+  </a>
+  <ion-title>Select group</ion-title>
+</ion-navbar>
+
+<ion-content class="move-left-REMOVE-test-only">
+
+<wnt-select-group type="checkbox" show-select="true" distinction-line="bottom" text-orientation="left">
+  <wnt-select text="Left" icon="ion-menu" >
+    <ion-checkbox>
+      Left<br />Left<br />Left<br />ddd
+    </ion-checkbox>
+  </wnt-select>
+</wnt-select-group>
+<wnt-select-group type="checkbox" show-select="true" distinction-line="bottom" text-orientation="right">
+  <wnt-select text="Right" icon="ion-menu" >
+    <ion-checkbox>
+      Right
+    </ion-checkbox>
+  </wnt-select>
+</wnt-select-group>
+<wnt-select-group type="checkbox" show-select="true" distinction-line="bottom" text-orientation="right">
+  <wnt-select text="Right" icon="ion-menu" >
+    <ion-checkbox>
+      Rig<br />ht
+    </ion-checkbox>
+  </wnt-select>
+</wnt-select-group>
+
+<wnt-select-group type="checkbox/radio" show-select="true/false" distinction-line="bottom/top" text-orientation="bottom/top/right/left">
+    <wnt-select text="Wybierz mnie..." icon="ion-menu" />
+</wnt-select-group>
+  
+  <!-- checkbox -->
+  <h3>checkbox</h3>
+  <ion-checkbox checked="true">
+    Ripple checkbox and row - default
+  </ion-checkbox>
+ 
+  <!-- radio -->
+  <h3>Radio</h3>
+  <ion-radio-group>
+    <ion-header>
+      Header
+    </ion-header>
+    <ion-radio checked="true">
+      Radio - default
+    </ion-radio>
+  </ion-radio-group>  
+    
+</ion-content>

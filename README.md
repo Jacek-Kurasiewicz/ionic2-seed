@@ -5,7 +5,7 @@
 [![devDependency Status](https://david-dm.org/mgechev/angular2-seed/dev-status.svg)](https://david-dm.org/mgechev/angular2-seed#info=devDependencies)
 [![Build Status](https://travis-ci.org/mgechev/angular2-seed.svg?branch=master)](https://travis-ci.org/mgechev/angular2-seed)
 
-A seed project for Angular 2 apps.
+A seed project for Ionic 2 andAngular 2 apps based on https://github.com/mgechev/angular2-seed
 
 It is something similar to the AngularJS Quick Start but does the entire build with gulp.
 
